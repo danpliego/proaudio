@@ -34,7 +34,7 @@
     .row {
       width: 135%;
       margin-left: -17.5%;
-      margin-top: -5%;
+      margin-top: -8%;
       @include gradient-directional($start-color: $primary-color, $end-color: $secondary-color, $deg: 35deg);
       &:before {
         content: ' ';

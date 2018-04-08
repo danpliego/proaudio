@@ -1,14 +1,9 @@
 
-// Helpers
+// Reset
 
 body {
   font-weight: 100;
-}
-.font-size-sm {
-  font-size: $font-size-sm;
-}
-.font-size-xs {
-  font-size: $font-size-xs;
+  padding-top: 68px;
 }
 hr {
   height: 1px;
@@ -16,6 +11,31 @@ hr {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   @include gradient-directional($start-color: $primary-color, $end-color: $secondary-color, $deg: -135deg);
+}
+h1, h2, h3, h4, h5, h6, label {
+  font-weight: bold;
+}
+
+// Helpers
+
+.font-size-sm {
+  font-size: $font-size-sm;
+}
+.font-size-xs {
+  font-size: $font-size-xs;
+}
+.sect-title {
+  @extend .text-uppercase;
+  display: inline-block;
+  margin-bottom: 3rem;
+  &:after {
+    margin-top: 1rem;
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 3px;
+    @include gradient-directional($start-color: $primary-color, $end-color: $secondary-color, $deg: -135deg);
+  }
 }
 
 // Boostrap Reset
@@ -40,6 +60,9 @@ hr {
     margin-top: 4px;
   }
 }
+.card {
+  box-shadow: 0 10px 20px rgba($black, .15);
+}
 
 // Navbar
 
@@ -59,8 +82,9 @@ hr {
   }
 }
 
-@include media-breakpoint-down(sm) {
-  body {
-    padding-top: 56px;
-  }
+// Contacto
+
+.contacto {
+  background-image: url('/assets/images/contacto/bg.png');
+  background-size: cover;
 }
