@@ -1,0 +1,66 @@
+
+// Helpers
+
+body {
+  font-weight: 100;
+}
+.font-size-sm {
+  font-size: $font-size-sm;
+}
+.font-size-xs {
+  font-size: $font-size-xs;
+}
+hr {
+  height: 1px;
+  border: 0;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  @include gradient-directional($start-color: $primary-color, $end-color: $secondary-color, $deg: -135deg);
+}
+
+// Boostrap Reset
+
+.text-uppercase {
+  letter-spacing: 2px;
+}
+.btn-primary {
+  @include gradient-directional($start-color: $primary-color, $end-color: $secondary-color, $deg: -135deg);
+  border: 0;
+  &:hover {
+    margin-top: -1px;
+    box-shadow: 1px 1px 20px rgba($primary-color, .5);
+  }
+}
+.btn-skew {
+  font-size: $font-size-sm;
+  transform: skewX(-15deg);
+  .btn-skew-content {
+    transform: skewX(15deg);
+    display: inline-block;
+    margin-top: 4px;
+  }
+}
+
+// Navbar
+
+.navbar {
+  z-index: 3;
+  .navbar-nav .nav-link {
+    font-weight: 100;
+    padding: 1rem 1.5rem;
+    font-size: $font-size-sm;
+  }
+}
+
+@include media-breakpoint-only(lg) {
+  .navbar .navbar-nav .nav-link {
+    padding: 1rem;
+    font-size: $font-size-xs;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  body {
+    padding-top: 56px;
+  }
+}

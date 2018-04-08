@@ -9,6 +9,8 @@ $secondary-color: #501296;
 $font-family-sans-serif: 'Nanami';
 $font-family-base:       $font-family-sans-serif;
 
+$font-size-sm: .85rem;
+$font-size-xs: .7rem;
 
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";

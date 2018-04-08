@@ -1,0 +1,145 @@
+.home-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+  .shadow-l, .shadow-r {
+    position: absolute;
+    bottom: -10px;
+  }
+  .shadow-r {
+    right: 0;
+  }
+  .shadow-center {
+    position: absolute;
+    left: 50%;
+    top: -65px;
+    img {
+      position: relative;
+      left: -50%;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+
+  .home {
+    position: relative;
+    .container-fluid {
+      overflow: hidden;
+    }
+    .row {
+      width: 135%;
+      margin-left: -17.5%;
+      margin-top: -5%;
+      @include gradient-directional($start-color: $primary-color, $end-color: $secondary-color, $deg: 35deg);
+      &:before {
+        content: ' ';
+        background: url(images/home/pro-energy.png);
+        display: block;
+        width: 50%;
+        position: absolute;
+        left: 25%;
+        top: 0;
+        height: 100%;
+        right: 25%;
+        opacity: .5;
+        background-size: cover;
+        background-position: center;
+      }
+      img {
+        opacity: .5;
+      }
+      .home-title {
+        position: absolute;
+        top: 47%;
+        font-weight: 900;
+      }
+      > a {
+        height: 100%;
+      }
+      .pro-energy .home-title {
+        top: 55%;
+      }
+      .audio, .estructuras {
+        overflow: hidden;
+        box-shadow: inset 0 0 30px rgba(0,0,0,.5);
+        @include gradient-directional($start-color: $primary-color, $end-color: $secondary-color, $deg: -135deg);
+      }
+      .audio {
+        transform: skewX(-25deg);
+        .home-title, img {
+          transform: skewX(25deg);
+        }
+        .home-title {
+          left: 40%;
+        }
+      }
+      .estructuras {
+        transform: skewX(25deg);
+        .home-title, img {
+          transform: skewX(-25deg);
+        }
+        img {
+          margin-left: -200px;
+        }
+        .home-title {
+          right: 40%;
+        }
+      }
+    }
+  }
+
+}
+
+@include media-breakpoint-down(md) {
+
+  .home-shadow {
+    display: none;
+  }
+
+}
+
+@include media-breakpoint-down(sm) {
+  .home-action {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    &:before {
+      @include gradient-directional($start-color: $primary-color, $end-color: $secondary-color, $deg: -135deg);
+      content: ' ';
+      position: absolute;
+      z-index: 1;
+      display: block;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      opacity: .5;
+    }
+    &:hover {
+      text-decoration: none;
+      &:before {
+        opacity: .6;
+      }
+    }
+  }
+  .home-title {
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  .audio {
+    background-image: url('images/home/audio.png');
+  }
+  .pro-energy {
+    background-image: url('images/home/pro-energy.png');
+  }
+  .estructuras {
+    background-image: url('images/home/estructuras.png');
+  }
+
+}
