@@ -15,6 +15,9 @@ hr {
 h1, h2, h3, h4, h5, h6, label {
   font-weight: bold;
 }
+.lead {
+  font-weight: 100;
+}
 
 // Helpers
 
@@ -27,9 +30,9 @@ h1, h2, h3, h4, h5, h6, label {
 .sect-title {
   @extend .text-uppercase;
   display: inline-block;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   &:after {
-    margin-top: 1rem;
+    margin-top: .66rem;
     content: ' ';
     display: block;
     width: 100%;
@@ -77,14 +80,6 @@ h1, h2, h3, h4, h5, h6, label {
 
 @include media-breakpoint-only(lg) {
   .navbar .navbar-nav .nav-link {
-    padding: 1rem;
-    font-size: $font-size-xs;
+    padding: 1rem .66rem;
   }
-}
-
-// Contacto
-
-.contacto {
-  background-image: url('/assets/images/contacto/bg.png');
-  background-size: cover;
 }
