@@ -1,11 +1,14 @@
-$custom-font-size: 20px;
 
-$font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
-$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
-$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:       $font-family-monospace;
+$custom-font-size: 17px;
+$black: #000;
+$dark: $black !default;
 
-$font-size-base: 3rem !default; // Assumes the browser default, typically `16px`
+$primary-color: #00D7F8;
+$secondary-color: #501296;
+
+$font-family-sans-serif: 'Nanami';
+$font-family-base:       $font-family-sans-serif;
+
 
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";

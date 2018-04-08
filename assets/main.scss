@@ -4,6 +4,154 @@
 @import "variables";
 @import "bootstrap/scss/bootstrap";
 
-.content {
-  font-size: $custom-font-size;
+
+// Helpers
+
+body {
+  font-weight: 100;
+}
+
+.font-size-sm {
+  font-size: .85rem;
+}
+.font-size-xs {
+  font-size: .65rem;
+}
+hr {
+  height: 1px;
+  border: 0;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  @include gradient-directional($start-color: $primary-color, $end-color: $secondary-color, $deg: -135deg);
+}
+
+// Boostrap Reset
+
+.text-uppercase {
+  letter-spacing: 2px;
+}
+.btn-primary {
+  @include gradient-directional($start-color: $primary-color, $end-color: $secondary-color, $deg: -135deg);
+  border: 0;
+  &:hover {
+    margin-top: -1px;
+    box-shadow: 1px 1px 20px rgba($primary-color, .5);
+  }
+}
+.btn-skew {
+  font-size: .85rem;
+  transform: skewX(-15deg);
+  .btn-skew-content {
+    transform: skewX(15deg);
+    display: inline-block;
+    margin-top: 4px;
+  }
+}
+
+// Navbar
+
+.navbar {
+  z-index: 2;
+  .navbar-nav .nav-link {
+    font-weight: 100;
+    padding: 1rem 1.5rem;
+    font-size: .85rem;
+  }
+}
+
+.home-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  .shadow-l, .shadow-r {
+    position: absolute;
+    bottom: -10px;
+  }
+  .shadow-r {
+    right: 0;
+  }
+  .shadow-center {
+    position: absolute;
+    left: 50%;
+    top: -65px;
+    img {
+      position: relative;
+      left: -50%;
+    }
+  }
+}
+
+
+@include media-breakpoint-up(md) {
+
+  .home {
+    position: relative;
+    .container-fluid {
+      overflow: hidden;
+    }
+    .row {
+      width: 135%;
+      margin-left: -17.5%;
+      margin-top: -5%;
+      @include gradient-directional($start-color: $primary-color, $end-color: $secondary-color, $deg: 35deg);
+      &:before {
+        content: ' ';
+        background: url(images/home/pro-energy.png);
+        display: block;
+        width: 50%;
+        position: absolute;
+        left: 25%;
+        top: 0;
+        height: 100%;
+        right: 25%;
+        opacity: .5;
+        background-size: cover;
+        background-position: center;
+      }
+      img {
+        opacity: .5;
+      }
+      .home-title {
+        position: absolute;
+        top: 47%;
+        font-weight: 900;
+      }
+      > a {
+        height: 100%;
+      }
+      .col-md-2 .home-title {
+        top: 55%;
+      }
+      .col-md-5 {
+        overflow: hidden;
+        box-shadow: inset 0 0 30px rgba(0,0,0,.5);
+        @include gradient-directional($start-color: $primary-color, $end-color: $secondary-color, $deg: -135deg);
+      }
+      .col-md-5:first-child {
+        transform: skewX(-25deg);
+        .home-title, img {
+          transform: skewX(25deg);
+        }
+        .home-title {
+          left: 40%;
+        }
+      }
+      .col-md-5:last-child {
+        transform: skewX(25deg);
+        .home-title, img {
+          transform: skewX(-25deg);
+        }
+        img {
+          margin-left: -200px;
+        }
+        .home-title {
+          right: 40%;
+        }
+      }
+    }
+  }
+
 }
