@@ -1,4 +1,11 @@
 
+@font-face {
+font-family: 'Camphor';
+src: url('../../fonts/CamphorPro-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
 $custom-font-size: 17px;
 $black: #000;
 $dark: $black !default;

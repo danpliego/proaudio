@@ -1,6 +1,32 @@
 ---
 ---
 
+@font-face {
+font-family: 'Nanami';
+src: url('../../fonts/Nanami-Light.otf') format('opentype');
+font-weight: 500;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Nanami';
+src: url('../../fonts/Nanami-Book.otf') format('opentype');
+font-weight: 600;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Nanami';
+src: url('../../fonts/Nanami-Black.otf') format('opentype');
+font-weight: 900;
+font-style: normal;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 @import "variables";
 @import "bootstrap/scss/bootstrap";
 @import "globals";

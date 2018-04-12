@@ -13,7 +13,10 @@ hr {
   @include gradient-directional($start-color: $primary-color, $end-color: $secondary-color, $deg: -135deg);
 }
 h1, h2, h3, h4, h5, h6, label {
-  font-weight: bold;
+  font-weight: 900;
+}
+strong, b {
+  font-weight: 900;
 }
 .lead {
   font-weight: 100;
@@ -47,6 +50,7 @@ h1, h2, h3, h4, h5, h6, label {
   letter-spacing: 2px;
 }
 .btn-primary {
+  font-weight: 900;
   @include gradient-directional($start-color: $primary-color, $end-color: $secondary-color, $deg: -135deg);
   border: 0;
   &:hover {
