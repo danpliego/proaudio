@@ -70,6 +70,13 @@ strong, b {
 .card {
   box-shadow: 0 10px 20px rgba($black, .15);
 }
+.ul-large {
+  list-style-image: url('images/ul-icon.png');
+  li {
+    font-size: 1.25rem;
+    padding-left: .33rem;
+  }
+}
 
 // Navbar
 

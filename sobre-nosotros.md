@@ -11,7 +11,10 @@ permalink: /sobre-nosotros/
       <div class="col-sm-9 px-5">
         <h4 class="sect-title">Nosotros</h4>
         <p class="lead">
-          Pro Audio Soluciones es una empresa que tiene un respaldo de <strong>más de 20 años al servicio de producciones de todo tipo de eventos</strong>, tratando de conseguir siempre el éxito del mismo lo cual conlleva a la satisfacción del cliente; originando posicionarnos como <strong>una de las compañías del giro más reconocidas de México</strong>.
+          Por más de 20 años, en Pro Audio Soluciones nos hemos dedicado a la renta de audio, iluminación, backline y video para la industria del entretenimiento.
+        </p>
+        <p class="lead">
+          Contamos con las marcas estándares que el mundo de la producción exige. Nuestro staff técnico está especializado y posee la experiencia necesaria para poder ofrecer a tu evento las soluciones integrales requeridas desde el inicio del proyecto hasta el momento del desmontaje.
         </p>
         <div class="row pt-3">
           <div class="col-sm-6">
