@@ -28,3 +28,11 @@ permalink: /pro-energy/
     </div>
   </div>
 </div>
+<div class="row no-gutters bg-dark">
+  <div class="col-sm-6">
+    <img class="img-fluid" src="/assets/images/generadores/1.png">
+  </div>
+  <div class="col-sm-6">
+    <img class="img-fluid" src="/assets/images/generadores/2.png">
+  </div>
+</div>
